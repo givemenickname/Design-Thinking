@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/backcolor"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="로그아웃"
+                android:id="@+id/logout3"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="340dp"
+                android:id="@+id/alarm3"
+                android:background="@drawable/notification"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="734dp">
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/rectangle">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="현재 진행 중인 공구(2/5)"
+                android:textColor="@color/backcolor"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="내가 진행하는 공구(1)"
+                android:textColor="@color/backcolor"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="13dp"/>
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
+                android:background="@drawable/banner3"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="55dp"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="공구 확정"
+                android:id="@+id/sold"
+                android:textColor="@color/backcolor"
+                android:textStyle="bold"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="280dp"
+                android:textSize="10dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/chat"
+                android:id="@+id/chatchain"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="285dp"/>
+
+            <ScrollView
+                android:layout_width="350dp"
+                android:layout_height="600dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/search"
+            app:tint="@color/backcolor" />
+
+        <ImageView
+            android:id="@+id/home2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/home" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/chat" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/backcolor"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -25,22 +25,22 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/logout"
                     android:layout_width="100dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:text="로그아웃"
-                    android:id="@+id/logout"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/alarm1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="340dp"
-                    android:id="@+id/alarm1"
-                    android:background="@drawable/notification"/>
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/notification" />
 
                 <ImageView
                     android:layout_width="50dp"
@@ -60,24 +60,24 @@
 
             <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <FrameLayout
                 android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/rectangle2">
 
                 <TextView
                     android:layout_width="80dp"
                     android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
                     android:text="카테고리"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="15dp"/>
-                
+                    android:textStyle="bold" />
+
             </FrameLayout>
 
             <FrameLayout
@@ -88,10 +88,10 @@
 
 
                 <ImageView
+                    android:id="@+id/food"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_margin="25dp"
-                    android:id="@+id/food"
                     android:background="@drawable/diet" />
 
                 <ImageView
@@ -99,24 +99,24 @@
                     android:layout_height="70dp"
                     android:layout_marginLeft="130dp"
                     android:layout_marginTop="25dp"
-                    android:background="@drawable/toilet"/>
+                    android:background="@drawable/toilet" />
 
             </FrameLayout>
-            
+
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:textSize="20dp"
-                android:text="마감이 임박한 공구(1)"
-                android:layout_marginTop="40dp"
                 android:layout_marginLeft="30dp"
-                android:textColor="@color/white"/>
+                android:layout_marginTop="40dp"
+                android:text="마감이 임박한 공구(1)"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
             <ImageView
                 android:layout_width="377dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/banner"/>
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/banner" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,33 +128,30 @@
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:background="@drawable/search"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="55dp"
-                app:tint="@color/backcolor"/>
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search"
+                app:tint="@color/backcolor" />
 
             <ImageView
+                android:id="@+id/home2"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:background="@drawable/home"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="80dp"
-                android:id="@+id/home2"
-                app:tint="@color/backcolor"/>
+                android:layout_marginTop="15dp"
+                android:background="@drawable/home" />
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/chat"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="70dp"
-                app:tint="@color/backcolor"/>
-
-
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chat"
+                android:id="@+id/chat"/>
 
         </LinearLayout>
 
 
     </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>
