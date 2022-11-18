@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backcolor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:orientation="vertical"
+            android:background="@color/backcolor"
+            >
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/nn_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="ID"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#CACACA"
+                android:textColorHint="#CACACA"
+                android:id="@+id/mid"
+                android:layout_marginTop="100dp"
+                android:background="@color/white"
+                />
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="PASSWORD"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#CACACA"
+                android:textColorHint="#CACACA"
+                android:id="@+id/mpassword"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                />
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="로그인"
+                android:id="@+id/loginbutton"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@color/logincolor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="10dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:text="회원 가입"
+                android:id="@+id/registerButton"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
