@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backcolor"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".MainActivity">
+
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:background="@color/backcolor"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="0dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
@@ -55,103 +61,129 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="700dp"
+            android:layout_height="510dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/rectangle2">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rectangle2" />
 
                 <TextView
                     android:layout_width="80dp"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="34dp"
                     android:text="카테고리"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
-            </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <FrameLayout
-                android:layout_width="350dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:background="@drawable/rectangle">
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/rectangle" />
 
+                    <ImageView
+                        android:id="@+id/food"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="75dp"
+                        android:background="@drawable/diet" />
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="75dp"
+                        android:background="@drawable/toilet" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="210dp"
+                    android:text="마감이 임박한 공구(1)"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
                 <ImageView
-                    android:id="@+id/food"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="25dp"
-                    android:background="@drawable/diet" />
-
-                <ImageView
-                    android:layout_width="69dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="130dp"
-                    android:layout_marginTop="25dp"
-                    android:background="@drawable/toilet" />
+                    android:layout_width="377dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@drawable/banner" />
 
             </FrameLayout>
 
-            <TextView
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
-                android:text="마감이 임박한 공구(1)"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
 
-            <ImageView
-                android:layout_width="377dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="11dp"
-                android:background="@drawable/banner" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
+            android:layout_height="100dp"
+            android:background="@color/none"
+            android:layout_gravity="bottom"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/search"
-                app:tint="@color/backcolor" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/home2"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/home" />
+                <ImageView
+                    android:layout_width="420dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/rectangle3" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/chat"
-                android:id="@+id/chat"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/search" />
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/home"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="160dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/chat"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="305dp"/>
+
+            </FrameLayout>
+
+
 
         </LinearLayout>
 
-
     </LinearLayout>
 
-</LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

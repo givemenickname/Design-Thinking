@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private ImageView back, alarm;
+    private ImageView back, alarm, chat, plusbutton;
     private TextView logout;
 
     @Override
@@ -42,6 +42,24 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, AlarmActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        chat = (ImageView) findViewById(R.id.schat);
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        plusbutton = (ImageView) findViewById(R.id.plusbutton);
+        plusbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, PostActivity.class);
                 startActivity(intent);
             }
         });

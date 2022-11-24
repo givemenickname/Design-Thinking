@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,87 +11,163 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="match_parent"
         android:background="@color/backcolor"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/back2"/>
+
+                <TextView
+                    android:id="@+id/logout2"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="로그아웃"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="335dp"
+                    android:id="@+id/alarm2"
+                    android:background="@drawable/notification"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:text="로그아웃"
-                android:id="@+id/logout2"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="340dp"
-                android:id="@+id/alarm2"
-                android:background="@drawable/notification"/>
-        </FrameLayout>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rectangle2" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="배달"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="55dp"/>
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/banner3" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="285dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/plus" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/plusbutton"
+                    android:layout_marginTop="430dp"
+                    android:layout_marginLeft="330dp"
+                    android:id="@+id/plusbutton"
+                    app:tint="@color/backcolor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="420dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/rectangle3" />
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="470dp"
+                            android:background="@drawable/search" />
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_marginLeft="160dp"
+                            android:layout_marginTop="465dp"
+                            android:background="@drawable/home" />
+
+                        <ImageView
+                            android:id="@+id/schat"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="305dp"
+                            android:layout_marginTop="475dp"
+                            android:background="@drawable/chat" />
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
 
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="17dp"
-        android:id="@+id/back2"
-        android:background="@drawable/ic_baseline_keyboard_arrow_left_24"/>
 
-    <FrameLayout
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/rectangle2">
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:text="배달"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="25dp"/>
-
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:layout_gravity="center"
-        android:background="@drawable/rectangle">
-
-        <ScrollView
-            android:layout_width="350dp"
-            android:layout_height="400dp"/>
-
-        <ImageView
-            android:id="@+id/plus"
-            android:layout_width="330dp"
-            android:layout_height="100dp"
-            android:background="@drawable/banner3"
-            android:layout_marginLeft="13dp"
-            android:layout_marginTop="15dp"/>
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="255dp"
-            android:background="@drawable/plus"/>
-
-    </FrameLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
