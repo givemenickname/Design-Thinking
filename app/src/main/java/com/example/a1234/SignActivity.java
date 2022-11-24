@@ -45,7 +45,8 @@ public class SignActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
                                 if (task.isSuccessful()) {
-                                    Intent intent = new Intent(SignActivity.this, MainActivity.class);
+                                    Toast.makeText(SignActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(SignActivity.this, LoginActivity.class);
                                     startActivity(intent);
                                     finish();
 
