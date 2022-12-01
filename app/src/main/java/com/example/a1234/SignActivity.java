@@ -14,30 +14,38 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignActivity extends AppCompatActivity {
 
+    private EditText name_join;
     private EditText email_join;
     private EditText pwd_join;
     private Button btn;
     FirebaseAuth firebaseAuth;
-
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = database.getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        name_join = (EditText) findViewById(R.id.name);
         email_join = (EditText) findViewById(R.id.idText);
         pwd_join = (EditText) findViewById(R.id.passwordText);
         btn = (Button) findViewById(R.id.check);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String email = email_join.getText().toString().trim();
                 final String pwd = pwd_join.getText().toString().trim();
+
+                adddatabase(name_join.getText().toString(),email_join.getText().toString(),pwd_join.getText().toString());
 
                 firebaseAuth.createUserWithEmailAndPassword(email, pwd)
                         .addOnCompleteListener(SignActivity.this, new OnCompleteListener<AuthResult>() {
@@ -61,4 +69,8 @@ public class SignActivity extends AppCompatActivity {
 
 
     }
+
+    public void adddatabase(String name, String id, String password){
+        database database = new database(name, id, password);
+        databaseReference.child("users").child(name).setValue(database);}
 }

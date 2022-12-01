@@ -51,15 +51,27 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@color/white"
+                android:hint="이름"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                android:textColorHint="#CACACA" />
+
+            <EditText
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:hint="ID"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:textColor="#CACACA"
+                android:textColor="#ff000000"
                 android:textColorHint="#CACACA"
                 android:id="@+id/idText"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/white"
                 />
 
@@ -70,23 +82,9 @@
                 android:hint="PASSWORD"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:textColor="#CACACA"
+                android:textColor="#ff000000"
                 android:textColorHint="#CACACA"
                 android:id="@+id/passwordText"
-                android:layout_marginTop="10dp"
-                android:background="@color/white"
-                />
-
-            <EditText
-                android:inputType="textPassword"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:hint="PASSWORD 확인"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:textColor="#CACACA"
-                android:textColorHint="#CACACA"
-                android:id="@+id/passwordTextcheck"
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 />
